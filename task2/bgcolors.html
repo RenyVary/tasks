@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+  	<div id="container">
+      <div id="square" class="squere">
+      	<div id="number" class="number">0</div>
+      </div>
+    </div>
+
+    <script type="text/javascript">      
+      myArray = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'];
+
+      var i = 0;
+
+      document.querySelector("#square").addEventListener("click", 
+    	function(){
+
+	      var randomItem1 = myArray[Math.floor(Math.random()*myArray.length)]; 
+	      var randomItem2 = myArray[Math.floor(Math.random()*myArray.length)];
+	      var randomItem3 = myArray[Math.floor(Math.random()*myArray.length)]; 
+	      var randomItem4 = myArray[Math.floor(Math.random()*myArray.length)]; 
+	      var randomItem5 = myArray[Math.floor(Math.random()*myArray.length)]; 
+	      var randomItem6 = myArray[Math.floor(Math.random()*myArray.length)]; 
+
+	      var color = "#" + randomItem1 + randomItem2 + randomItem3 + randomItem4 +randomItem5 + randomItem6
+    	  i = ++i;
+    	  var newDiv = document.createElement('div');
+    	  document.querySelector("#square").style.background = color;
+    	  document.querySelector("#number").innerHTML = i;
+        document.querySelector("#container").insertAdjacentHTML('afterend', '<div>'+ '<span class="iter tbl">' + i + '</span>' + '<span class="color tbl">' + color + '</span>' + '</div>');
+    	})
+    </script>
+  </body>
+</html>	

@@ -1,0 +1,27 @@
+.squere {
+  display: flex;
+  background: #008800;
+  height: 15em;
+  width: 15em;
+  margin-bottom: 1rem;	
+}
+
+.number {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.tbl {
+  display: inline-block;
+  width: 15em;
+  border: 1px solid rgb(85, 148, 243);
+}
+
+.iter {
+	width: 5rem;
+}
+
+.color {
+  width: 10rem;
+}
